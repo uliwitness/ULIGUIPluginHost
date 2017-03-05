@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ULIGUIPlugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ULIGUIPluginHost.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>5593D0E51E6C3F6400E7F31D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5593D0FD1E6C3F8D00E7F31D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

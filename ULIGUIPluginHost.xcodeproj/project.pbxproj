@@ -11,7 +11,34 @@
 		5593D0EE1E6C3F6400E7F31D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5593D0ED1E6C3F6400E7F31D /* main.m */; };
 		5593D0F01E6C3F6400E7F31D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5593D0EF1E6C3F6400E7F31D /* Assets.xcassets */; };
 		5593D0F31E6C3F6400E7F31D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5593D0F11E6C3F6400E7F31D /* MainMenu.xib */; };
+		5593D1051E6C3F8D00E7F31D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5593D1041E6C3F8D00E7F31D /* main.m */; };
+		5593D1091E6C3F8D00E7F31D /* ULIGUIPlugin.app in Embed Plugin Host */ = {isa = PBXBuildFile; fileRef = 5593D0FE1E6C3F8D00E7F31D /* ULIGUIPlugin.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5593D10E1E6C624000E7F31D /* ULIGUIPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5593D1021E6C3F8D00E7F31D /* ULIGUIPlugin.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5593D1071E6C3F8D00E7F31D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5593D0DE1E6C3F6400E7F31D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5593D0FD1E6C3F8D00E7F31D;
+			remoteInfo = ULIGUIPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5593D10D1E6C3F8D00E7F31D /* Embed Plugin Host */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				5593D1091E6C3F8D00E7F31D /* ULIGUIPlugin.app in Embed Plugin Host */,
+			);
+			name = "Embed Plugin Host";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5593D0E61E6C3F6400E7F31D /* ULIGUIPluginHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ULIGUIPluginHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +48,23 @@
 		5593D0EF1E6C3F6400E7F31D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5593D0F21E6C3F6400E7F31D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5593D0F41E6C3F6400E7F31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5593D0FE1E6C3F8D00E7F31D /* ULIGUIPlugin.app */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = ULIGUIPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5593D1001E6C3F8D00E7F31D /* ULIGUIPluginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ULIGUIPluginProtocol.h; sourceTree = "<group>"; };
+		5593D1011E6C3F8D00E7F31D /* ULIGUIPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ULIGUIPlugin.h; path = ../ULIGUIPlugin/ULIGUIPlugin.h; sourceTree = "<group>"; };
+		5593D1021E6C3F8D00E7F31D /* ULIGUIPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ULIGUIPlugin.m; path = ../ULIGUIPlugin/ULIGUIPlugin.m; sourceTree = "<group>"; };
+		5593D1041E6C3F8D00E7F31D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5593D1061E6C3F8D00E7F31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5593D0E31E6C3F6400E7F31D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593D0FB1E6C3F8D00E7F31D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				5593D0E81E6C3F6400E7F31D /* ULIGUIPluginHost */,
+				5593D0FF1E6C3F8D00E7F31D /* ULIGUIPlugin */,
 				5593D0E71E6C3F6400E7F31D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5593D0E61E6C3F6400E7F31D /* ULIGUIPluginHost.app */,
+				5593D0FE1E6C3F8D00E7F31D /* ULIGUIPlugin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +97,8 @@
 			children = (
 				5593D0E91E6C3F6400E7F31D /* AppDelegate.h */,
 				5593D0EA1E6C3F6400E7F31D /* AppDelegate.m */,
+				5593D1011E6C3F8D00E7F31D /* ULIGUIPlugin.h */,
+				5593D1021E6C3F8D00E7F31D /* ULIGUIPlugin.m */,
 				5593D0EF1E6C3F6400E7F31D /* Assets.xcassets */,
 				5593D0F11E6C3F6400E7F31D /* MainMenu.xib */,
 				5593D0F41E6C3F6400E7F31D /* Info.plist */,
@@ -71,6 +115,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5593D0FF1E6C3F8D00E7F31D /* ULIGUIPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				5593D1001E6C3F8D00E7F31D /* ULIGUIPluginProtocol.h */,
+				5593D1041E6C3F8D00E7F31D /* main.m */,
+				5593D1061E6C3F8D00E7F31D /* Info.plist */,
+			);
+			path = ULIGUIPlugin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +135,34 @@
 				5593D0E21E6C3F6400E7F31D /* Sources */,
 				5593D0E31E6C3F6400E7F31D /* Frameworks */,
 				5593D0E41E6C3F6400E7F31D /* Resources */,
+				5593D10D1E6C3F8D00E7F31D /* Embed Plugin Host */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5593D1081E6C3F8D00E7F31D /* PBXTargetDependency */,
 			);
 			name = ULIGUIPluginHost;
 			productName = ULIGUIPluginHost;
 			productReference = 5593D0E61E6C3F6400E7F31D /* ULIGUIPluginHost.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5593D0FD1E6C3F8D00E7F31D /* ULIGUIPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5593D10A1E6C3F8D00E7F31D /* Build configuration list for PBXNativeTarget "ULIGUIPlugin" */;
+			buildPhases = (
+				5593D0FA1E6C3F8D00E7F31D /* Sources */,
+				5593D0FB1E6C3F8D00E7F31D /* Frameworks */,
+				5593D0FC1E6C3F8D00E7F31D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ULIGUIPlugin;
+			productName = ULIGUIPlugin;
+			productReference = 5593D0FE1E6C3F8D00E7F31D /* ULIGUIPlugin.app */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +174,11 @@
 				ORGANIZATIONNAME = "Uli Kusterer";
 				TargetAttributes = {
 					5593D0E51E6C3F6400E7F31D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RCKXACKVZS;
+						ProvisioningStyle = Automatic;
+					};
+					5593D0FD1E6C3F8D00E7F31D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RCKXACKVZS;
 						ProvisioningStyle = Automatic;
@@ -121,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				5593D0E51E6C3F6400E7F31D /* ULIGUIPluginHost */,
+				5593D0FD1E6C3F8D00E7F31D /* ULIGUIPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5593D0FC1E6C3F8D00E7F31D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,10 +230,27 @@
 			files = (
 				5593D0EE1E6C3F6400E7F31D /* main.m in Sources */,
 				5593D0EB1E6C3F6400E7F31D /* AppDelegate.m in Sources */,
+				5593D10E1E6C624000E7F31D /* ULIGUIPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593D0FA1E6C3F8D00E7F31D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5593D1051E6C3F8D00E7F31D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5593D1081E6C3F8D00E7F31D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5593D0FD1E6C3F8D00E7F31D /* ULIGUIPlugin */;
+			targetProxy = 5593D1071E6C3F8D00E7F31D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5593D0F11E6C3F6400E7F31D /* MainMenu.xib */ = {
@@ -252,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = RCKXACKVZS;
 				INFOPLIST_FILE = ULIGUIPluginHost/Info.plist;
@@ -265,12 +369,39 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = RCKXACKVZS;
 				INFOPLIST_FILE = ULIGUIPluginHost/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thevoidsoftware.ULIGUIPluginHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5593D10B1E6C3F8D00E7F31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RCKXACKVZS;
+				INFOPLIST_FILE = ULIGUIPlugin/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thevoidsoftware.ULIGUIPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5593D10C1E6C3F8D00E7F31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RCKXACKVZS;
+				INFOPLIST_FILE = ULIGUIPlugin/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thevoidsoftware.ULIGUIPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -293,6 +424,16 @@
 				5593D0F91E6C3F6400E7F31D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5593D10A1E6C3F8D00E7F31D /* Build configuration list for PBXNativeTarget "ULIGUIPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5593D10B1E6C3F8D00E7F31D /* Debug */,
+				5593D10C1E6C3F8D00E7F31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
